@@ -1,0 +1,128 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    }
+    
+a {
+        text-decoration: none;
+        color: #5b7c2b; 
+    }
+    
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+.center {
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 500px);
+    }
+    
+.icon-title-box {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    
+.navigation__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+
+.navigation__link {
+        color: black;
+        font-weight: 600;
+    }
+    
+.add-review {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        width: 50vw;
+        min-width: 400px;
+    }
+    
+.product-name-area {
+        width: 50%;
+        height: 25px;
+        border-radius: 4px; 
+        border: 2px solid #87a870;
+    }
+    
+.review-area {
+        width: 50%;
+        height: 50px;
+        border-radius: 8px; 
+        border: 2px solid #87a870;
+    }
+    
+.review-item {
+        position: relative;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #e8eed4;
+        border-radius: 8px; 
+    }
+    
+.review-item p {
+        margin: 0;
+    }
+    
+.add-button {
+        background-color: #96ba5b;
+        color: #fff;
+        border: none;
+        padding: 4px 8px;
+        border-radius: 4px;
+        align-self: flex-end;
+        cursor: pointer; 
+    }
+    
+.delete-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        background-color: #c8be46;
+        color: #fff;
+        border: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 25%; 
+        cursor: pointer;
+    }
+    
+.delete-button:hover {
+        background-color: #b19033;
+        color: #fff;
+    }
+    
+.delete-button::before,
+.delete-button::after {
+        content: "";
+        position: absolute;
+        background-color: #fff;
+    }
+    
+.delete-button::before {
+        width: 2px;
+        height: 12px;
+        top: 2px;
+        left: 7px;
+        transform: rotate(45deg);
+    }
+    
+.delete-button::after {
+        width: 2px;
+        height: 12px;
+        top: 2px;
+        left: 7px;
+        transform: rotate(-45deg);
+    }
+    
+#productsList {
+        margin: 10px 0;
+    }
+    
